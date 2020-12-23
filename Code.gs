@@ -2,7 +2,7 @@ const name = "Your name here"
 const email = "youremailhere@gmail.com"
 
 
-function putMonthlySubscription() {
+function putMonthlySpending() {
   var ss = SpreadsheetApp.getActiveSpreadsheet()
   var sh = ss.getSheetByName("Savings")
   var sub = ss.getSheetByName("Subscription")
@@ -25,7 +25,7 @@ function putMonthlySubscription() {
   }
 }
 
-function putMonthlyRemuneration() {
+function putMonthlyIncome() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sh = ss.getSheetByName("Savings");
   var sub = ss.getSheetByName("Subscription")
@@ -249,7 +249,7 @@ function parseGrabfoodEmail(content) {
   return transaction
 }
 
-function putDailyGrabfoodReceiptEmail() {
+function putDailyGrabfoodTransaction() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sh = ss.getSheetByName("Cash And E-money");
   var date = Utilities.formatDate(new Date(), "GMT+7", "MM/dd/yyyy")
